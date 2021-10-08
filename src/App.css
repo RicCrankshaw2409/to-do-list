@@ -1,0 +1,102 @@
+/* app styling*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16x;
+  background-color: #ced3dc;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+/* header styling */
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4rem;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: #275dad;
+}
+
+/* addtodo styling */
+form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#input-label {
+  padding-right: 15px;
+  font-weight: 700;
+  color: #275dad;
+  font-size: 20px;
+}
+
+input {
+  width: 500px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+button {
+  text-align: center;
+  height: 25px;
+  padding: 5px;
+  background-color: #aba9c3;
+  border-radius: 5px;
+  border: solid 2px white;
+  color: #275dad;
+  font-weight: 700;
+}
+
+button:hover {
+  text-align: center;
+  height: 25px;
+  padding: 5px;
+  background-color: #275dad;
+  color: #aba9c3;
+  border-radius: 5px;
+  border: solid 2px white;
+  font-weight: 700;
+}
+
+#inputsection {
+  margin-bottom: 20px;
+}
+
+/* todo styling */
+
+#todolistsection {
+  overflow: auto;
+  margin: 0 auto;
+  background-color: rgb(187, 211, 236);
+  height: 500px;
+  width: 60.5%;
+  margin-bottom: 100px;
+  text-align: left;
+  border: solid 3px white;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-position: inside;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.complete {
+  color: green;
+}
