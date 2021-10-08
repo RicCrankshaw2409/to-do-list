@@ -1,14 +1,17 @@
-import { useState } from "react";
+
 
 function Todolist(props) {
   const { list } = props;
 
-  const [complete, setComplete] = useState("false");
 
   function changeToComplete(e) {
-    console.log(list);
-    console.log(e.target.parentElement.className);
-    setComplete("complete");
+    console.log(e.target.parentElement.id)
+    list.forEach((item) => {
+      if (item === e.target.parentElement.id) {
+        e.target.parentElement.className = "complete"
+      }
+    })
+    console.log(e.target.parentElement.className)
   }
 
   return (
@@ -16,9 +19,9 @@ function Todolist(props) {
       <ul>
         {list.map((item) => {
           return (
-            <li className={complete} key={item} id={item}>
+            <li className={"false"} key={item} id={item}>
               {item}
-              <button onClick={changeToComplete}>✅</button>
+              <button className="complete-button" onClick={changeToComplete}>✅</button>
             </li>
           );
         })}

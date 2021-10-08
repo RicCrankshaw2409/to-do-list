@@ -25,7 +25,7 @@ function Addtodo(props) {
           setNewListItem(e.target.value);
         }}
       />
-      <button type="submit">Submit</button>
+      <button class="large-button" type="submit">Submit</button>
     </form>
   );
 }
